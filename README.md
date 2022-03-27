@@ -10,3 +10,7 @@ python app.py
 
 # Demo
 https://youtu.be/JZZ7EMJdbPA
+
+# Creating environment
+Youll need to create an environment in anaconda in order for this project to work.
+run <h2>pip install -r requirements.txt</h2> in order to install the required versions and library required for the project to work.
