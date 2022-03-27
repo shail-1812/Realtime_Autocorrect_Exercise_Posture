@@ -1,9 +1,28 @@
-# Ingenium_Hackathon_Bersekers_Solofitness
+# Human-Pose-Compare
+For theory and details on implementation, Please Visit: 
+https://medium.com/@krishnarajr319/human-pose-comparison-and-action-scoring-using-deep-learning-opencv-python-c2bdf0ddecba
 
-# Description 
-This project aims to identify your posture while doing exercise and gives you a score based on how well you have performed a particular exercise. This can be helpful to replace gym trainers and give a feedback on the users performance simultaneously keeping a track on how they have performed and improved.
+## Quick start 
+Install Dependencies:
+```
+pip install -r requirements.txt
+```
+There is a test video named ```test.mp4``` included with the repo in order to test its working. 
+The file called ```lookup_test.pickle``` contains the sequence of keypoints recorded for ```punch - side``` recorded from ```test.mp4```.
 
+In order to compare ```test.mp4``` with the keypoints recorded in the ```lookup.pickle``` under the label ```punch - side```,run:
+```
+python start_here.py --activity "punch - side" --video "test.mp4"
+```
+## Creating New Lookup
 
-# Run The Project
-In order to run this application run this command in your terminal.
-<br><h4>python app.py</h4>
+There is a file ```keypoints_from_video.py``` which can be used to create a new lookup table. In order to extract and record keypoints from ```test.mp4```, run:
+```
+python keypoints_from_video.py --activity "punch - side" --video "test.mp4" --lookup "lookup_new.pickle"/[YOUR_LOOKUP_NAME]
+```
+Then, in order to use this new lookup, run:
+```
+python start_here.py --activity "punch - side" --video "test.mp4" --lookup "lookup_new.pickle"/[YOUR_LOOKUP_NAME]
+```
+### Acknowledgements
+The Posenet model used in this repo was implemented  here : https://github.com/rwightman/posenet-python
