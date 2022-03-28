@@ -9,7 +9,7 @@ In order to run this application run this command in your terminal. python app.p
 python app.py
 
 # Demo
-https://youtu.be/JZZ7EMJdbPA
+https://youtu.be/_mIaqmYEpKU
 
 # Creating environment
 Youll need to create an environment in anaconda in order for this project to work.
