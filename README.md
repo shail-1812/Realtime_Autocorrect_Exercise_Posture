@@ -14,3 +14,11 @@ https://youtu.be/_mIaqmYEpKU
 # Creating environment
 Youll need to create an environment in anaconda in order for this project to work.
 run <h2>pip install -r requirements.txt</h2> in order to install the required versions and library required for the project to work.
+
+# Technologies used
+The technologies that went into the developement of the project is listed below.
+1. Tensorflow api for deep learning applications for comparing two videos. (LSTM)
+2. Flask framework for developing website.
+3. Computer vision for processing the images (frames) which have been deduced from the video.
+4. Machine learning for calculating the loss for different frames.
+5. Posenet architecture for identifying the posture while performing the exercise.
