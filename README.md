@@ -22,3 +22,4 @@ The technologies that went into the developement of the project is listed below.
 3. Computer vision for processing the images (frames) which have been deduced from the video.
 4. Machine learning for calculating the loss for different frames.
 5. Posenet architecture for identifying the posture while performing the exercise.
+6. Cuda framework to compare frames parallely in order to reduce computing time. 
